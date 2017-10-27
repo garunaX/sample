@@ -13,33 +13,17 @@ A. Program design
 
 1. Style
 
-2. Features
+2. Features		
 
 3. functioning
 
 
-B. AVL Tree
+B. TOPIC
 
-1. Insertion
-An interative insert function was written to give better performance because
-recursive functions has to allocate/deallocate multiple stack frames.
+1. Property 1
 
-2. AVLTNode
-Because an AVL tree is a self-balancing tree, the node structure needs to be
-extended to handle height information.
+2. Property2
 
-
-C. Splay Tree
-
-1. Iteration vs. Recursion
-Iteration was chosen specifically for code reuse purposes. The general algorithm
-for any splay tree operation was to perform the operation then splay at that
-particular node. Using the provided functions from the binary search tree code
-allowed finding a particular node easy. Then once found, it was a matter of
-simply splaying it to the root (while its not the root, splay it). The specific
-algorithm for inserting was taken directly from the BST code, with only small
-modifications for splaying and personal preferences on handling returns (try to
-have return keyword in only one place).  
 
 2. Small functions
 They are easier to test, easier to code, easier to read,and definitely easier to
