@@ -12,31 +12,10 @@ II. Design
 A. Program design
 
 1. Style
-Code given by CSE326 staff was treated as though it was written by a team
-member.  Naming conventions of pre-existing code was changed to match the
-team's preferred style for member functions.
 
-2. Collision handling
-It seemed apparent that because we were generalizing through templates, to have
-the result of doing an operation on some key that already existed be hardcoded
-was not in good form.  This is where the collision policy idea came to bear.
-The general principal is that the end-programmer using a tree should be able to
-specify what happens as a result of a collision by supplying a function to
-handle this event.  In case the end-programmer does not know about function
-pointers, or has no desire to specialize the trees by supplying a collision
-function, a default must be set up.  This directly translates to the
-unparameterized constructor (default), the parameterized constructor (with
-collision function) and the setCollisionPolicy function (in case they need to
-change).
+2. Features
 
-3. bool <function>(param& , param&) signatures
-We wanted to have a way to notify the user of invalid find operations.  Since
-the code is templatized we dont know what type to return for the function.  Thus
-the bool return.  Essentially, if the operation is successful, return true and
-modify the appropriate parameter that was passed in by reference.  If the
-operation fails, return false, and leave the parameter alone.  With this design
-decision made, other similar functions needed to have similar feels to maintain
-a consistant API.
+3. functioning
 
 
 B. AVL Tree
